@@ -1,6 +1,6 @@
 namespace LibraryManagement.Books.Interfaces;
 
-public interface IBookOperation
+public interface IBookService
 {
   public void RegisterBooks(List<Book> books) {}
   

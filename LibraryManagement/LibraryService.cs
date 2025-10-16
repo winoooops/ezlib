@@ -19,6 +19,7 @@ public class LibraryService
   {
     var newUser = new User(name);
     
+    // does not support duplicate key, but support  duplicate hash address
     if (_users.TryAdd(newUser.ID, newUser)) return newUser;
     Console.WriteLine($"User [id: {newUser.ID}, name: {newUser.Name}]already exists!");
     return null;

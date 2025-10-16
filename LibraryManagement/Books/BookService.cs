@@ -2,7 +2,7 @@ using LibraryManagement.Books.Interfaces;
 
 namespace LibraryManagement.Books;
 
-public class BookService : IBookOperation
+public class BookService : IBookService
 {
   public static BookService Instance { get; } = new BookService();
 
